@@ -1,4 +1,4 @@
-git config --global user.name "Yuan_lee"
+﻿git config --global user.name "Yuan_lee"
 git config --global user.email "yuan_lee@zyxel.com.tw"
 git config --global core.editor vim
 git config --list 
@@ -35,6 +35,38 @@ fetch : update但不包括merge
 用Stash 暫存功能把工作區及索引的資訊暫存起來
 git stash	#己追蹤的檔案
 git stash -u 	#包含己追蹤及未追蹤
+
+
+如何修改最後一次的commit呢 ?
+有時候我們 commit 完之後，才發現自己的 commit 內容手殘打錯了
+這時候可以使用如下指令，他會跳出編輯視窗給你編輯你上一次的 commit 內容。
+
+#git commit --amend
+
+又或是我們 commit 完之後，才發現自己漏了幾個檔案沒有 add 進去
+
+這時候可以使用如下指令
+
+#git commit -m "init commit"
+#git add missing_file.py
+#git commit --amend
+
+如上狀況為當我 git commit -m "init commit" 之後，
+我發現我漏掉了 missing_file.py 這個檔案 ( commit 前忘記 add 進去 ) ，
+這時候就可以使用 git commit --amend 來修改最後一次的 commit 。
+有時候我們會為了方便，直接使用下面的指令一次加入全部的檔案
+
+
+
+$ git log --oneline
+27f6ed6 (HEAD -> master) add dog 2
+2bab3e7 add dog 1
+ca40fc9 add 2 cats
+1de2076 add cat 2
+cd82f29 add cat 1
+382a2a5 add database settings
+bb0c9c2 init commit
+$ git rebase -i bb0c9c2
 
 Git-Tutorials:教學
 https://github.com/twtrubiks/Git-Tutorials
