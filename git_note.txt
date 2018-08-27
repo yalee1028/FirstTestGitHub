@@ -36,6 +36,7 @@ fetch : update但不包括merge
 git stash	#己追蹤的檔案
 git stash -u 	#包含己追蹤及未追蹤
 
+<<<<<<< HEAD
 
 
 如何修改最後一次的commit呢 ?
@@ -69,5 +70,7 @@ cd82f29 add cat 1
 bb0c9c2 init commit
 $ git rebase -i bb0c9c2
 
+=======
+>>>>>>> 6930a2a90bf9a997d7ed82b7397636e1a2a84dba
 Git-Tutorials:教學
 https://github.com/twtrubiks/Git-Tutorials
