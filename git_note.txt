@@ -1,0 +1,37 @@
+git config --global user.name "Yuan_lee"
+git config --global user.email "yuan_lee@zyxel.com.tw"
+git config --global core.editor vim
+git config --list 
+
+
+
+
+git clone [git address] #check out project
+git status		#查看檔案情況   untracked , unmoidfied(沒被修改過的檔案), modified(有過編輯檔案), statged (新增檔案)
+git reset --hard 	#復原目前的變更 #reset 要選擇hard才會回復之前的變更
+git log 		#查詢歷史記錄
+
+
+git checkout [branch_name] #切換分支
+git checkout -b [branch_name] #建立並且切換分支
+
+git add [file_name]	#新增一個檔案到專案上 ,每個檔案執行 git add 會將它們標記為已解決狀態， 因為預存（stage）動作代表了衝突已經解決。
+git add .		#新增所有的檔案
+git commit -m "fix bug" #只是把修改的檔案commit 存到自己的電腦的資料庫而以
+git push  		#把修改的檔案上傳網路
+git pull 		#把檔案從網路抓回?
+
+
+git rebase [branch_name] 
+
+
+
+與遠端溝通
+clone 
+pull :  fetch + merge
+push :
+fetch : update但不包括merge
+
+用Stash 暫存功能把工作區及索引的資訊暫存起來
+git stash	#己追蹤的檔案
+git stash -u 	#包含己追蹤及未追蹤
