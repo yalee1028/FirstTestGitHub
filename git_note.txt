@@ -35,8 +35,10 @@ fetch : update但不包括merge
 用Stash 暫存功能把工作區及索引的資訊暫存起來
 git stash	#己追蹤的檔案
 git stash -u 	#包含己追蹤及未追蹤
+git stash save -u "feature"
+git stash pop
+git stash list
 
-<<<<<<< HEAD
 
 
 如何修改最後一次的commit呢 ?
@@ -70,7 +72,15 @@ cd82f29 add cat 1
 bb0c9c2 init commit
 $ git rebase -i bb0c9c2
 
-=======
->>>>>>> 6930a2a90bf9a997d7ed82b7397636e1a2a84dba
+
+解決衝突
+git add filename 
+git commit 
+git pull 
+
+通常我們會手動下去修改衝突 conflicts，然後再加個 commit
+git add Hello.py
+git commit -m "conflict fixed"
+
 Git-Tutorials:教學
 https://github.com/twtrubiks/Git-Tutorials
