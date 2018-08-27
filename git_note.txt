@@ -7,31 +7,34 @@ git config --list
 
 
 git clone [git address] #check out project
-git status		#¬d¬İÀÉ®×±¡ªp   untracked , unmoidfied(¨S³Q­×§ï¹LªºÀÉ®×), modified(¦³¹L½s¿èÀÉ®×), statged (·s¼WÀÉ®×)
-git reset --hard 	#´_­ì¥Ø«eªºÅÜ§ó #reset ­n¿ï¾Ühard¤~·|¦^´_¤§«eªºÅÜ§ó
-git log 		#¬d¸ß¾ú¥v°O¿ı
+git status		#æŸ¥çœ‹æª”æ¡ˆæƒ…æ³   untracked , unmoidfied(æ²’è¢«ä¿®æ”¹éçš„æª”æ¡ˆ), modified(æœ‰éç·¨è¼¯æª”æ¡ˆ), statged (æ–°å¢æª”æ¡ˆ)
+git reset --hard 	#å¾©åŸç›®å‰çš„è®Šæ›´ #reset è¦é¸æ“‡hardæ‰æœƒå›å¾©ä¹‹å‰çš„è®Šæ›´
+git log 		#æŸ¥è©¢æ­·å²è¨˜éŒ„
 
 
-git checkout [branch_name] #¤Á´«¤À¤ä
-git checkout -b [branch_name] #«Ø¥ß¨Ã¥B¤Á´«¤À¤ä
+git checkout [branch_name] #åˆ‡æ›åˆ†æ”¯
+git checkout -b [branch_name] #å»ºç«‹ä¸¦ä¸”åˆ‡æ›åˆ†æ”¯
 
-git add [file_name]	#·s¼W¤@­ÓÀÉ®×¨ì±M®×¤W ,¨C­ÓÀÉ®×°õ¦æ git add ·|±N¥¦­Ì¼Ğ°O¬°¤w¸Ñ¨Mª¬ºA¡A ¦]¬°¹w¦s¡]stage¡^°Ê§@¥Nªí¤F½Ä¬ğ¤w¸g¸Ñ¨M¡C
-git add .		#·s¼W©Ò¦³ªºÀÉ®×
-git commit -m "fix bug" #¥u¬O§â­×§ïªºÀÉ®×commit ¦s¨ì¦Û¤vªº¹q¸£ªº¸ê®Æ®w¦Ó¥H
-git push  		#§â­×§ïªºÀÉ®×¤W¶Çºô¸ô
-git pull 		#§âÀÉ®×±qºô¸ô§ì¦^?
+git add [file_name]	#æ–°å¢ä¸€å€‹æª”æ¡ˆåˆ°å°ˆæ¡ˆä¸Š ,æ¯å€‹æª”æ¡ˆåŸ·è¡Œ git add æœƒå°‡å®ƒå€‘æ¨™è¨˜ç‚ºå·²è§£æ±ºç‹€æ…‹ï¼Œ å› ç‚ºé å­˜ï¼ˆstageï¼‰å‹•ä½œä»£è¡¨äº†è¡çªå·²ç¶“è§£æ±ºã€‚
+git add .		#æ–°å¢æ‰€æœ‰çš„æª”æ¡ˆ
+git commit -m "fix bug" #åªæ˜¯æŠŠä¿®æ”¹çš„æª”æ¡ˆcommit å­˜åˆ°è‡ªå·±çš„é›»è…¦çš„è³‡æ–™åº«è€Œä»¥
+git push  		#æŠŠä¿®æ”¹çš„æª”æ¡ˆä¸Šå‚³ç¶²è·¯
+git pull 		#æŠŠæª”æ¡ˆå¾ç¶²è·¯æŠ“å›?
 
 
 git rebase [branch_name] 
 
 
 
-»P»·ºİ·¾³q
+èˆ‡é ç«¯æºé€š
 clone 
 pull :  fetch + merge
 push :
-fetch : update¦ı¤£¥]¬Amerge
+fetch : updateä½†ä¸åŒ…æ‹¬merge
 
-¥ÎStash ¼È¦s¥\¯à§â¤u§@°Ï¤Î¯Á¤Şªº¸ê°T¼È¦s°_¨Ó
-git stash	#¤v°lÂÜªºÀÉ®×
-git stash -u 	#¥]§t¤v°lÂÜ¤Î¥¼°lÂÜ
+ç”¨Stash æš«å­˜åŠŸèƒ½æŠŠå·¥ä½œå€åŠç´¢å¼•çš„è³‡è¨Šæš«å­˜èµ·ä¾†
+git stash	#å·±è¿½è¹¤çš„æª”æ¡ˆ
+git stash -u 	#åŒ…å«å·±è¿½è¹¤åŠæœªè¿½è¹¤
+
+Git-Tutorials:æ•™å­¸
+https://github.com/twtrubiks/Git-Tutorials
